@@ -1,0 +1,24 @@
+svg {
+  display: block;
+  width: 100%;
+}
+
+.main {
+  display: block;
+  padding: 20px;
+
+  /* Custom media query, which you can set in `custom-media.css` */
+  @media (--tablet-portrait-and-above) {
+    padding: 40px;
+  }
+}
+
+.text {
+  /* Create custom functions */
+  @mixin clamp 2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24px, 1fr));
+}

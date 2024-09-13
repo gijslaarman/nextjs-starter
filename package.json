@@ -1,0 +1,52 @@
+{
+  "name": "@gijslaarman/nextjs-starter",
+  "version": "0.9.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "format": "prettier --write --",
+    "generate:icons": "tsx ./scripts/icon-loader/generate-icons.ts && prettier --write ./src/components/icons && eslint --fix ./src/components/icons",
+    "lint": "next lint --max-warnings=0",
+    "prepare": "husky",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "change-case": "^5.4.4",
+    "next": "^14",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@csstools/postcss-global-data": "^3.0.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vercel/style-guide": "^6.0.0",
+    "css-declaration-sorter": "^7.2.0",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "node-html-parser": "^6.1.13",
+    "postcss": "^8.4.45",
+    "postcss-custom-media": "^11.0.1",
+    "postcss-discard-duplicates": "^7.0.1",
+    "postcss-functions": "^4.0.2",
+    "postcss-mixins": "^10.0.1",
+    "postcss-preset-env": "^10.0.2",
+    "prettier": "^3.3.3",
+    "prettier-plugin-css-order": "^2.1.2",
+    "stylelint": "^16.9.0",
+    "stylelint-prettier": "^5.0.2",
+    "svgo": "^3.3.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@9.8.0"
+}

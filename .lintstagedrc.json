@@ -1,0 +1,5 @@
+{
+  "**/*.(js|jsx|ts|tsx|mdx|json|css)": ["pnpm format"],
+  "**/*.(js|jsx|ts|tsx)": ["pnpm eslint --fix --max-warnings=0 --"],
+  "**/*.(css|scss|sass|less|styl)": ["pnpm stylelint --"]
+}
